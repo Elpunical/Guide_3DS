@@ -1,0 +1,812 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<!-- for guide purposes all caching is removed and is separately built. -->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Finalisation de l’installation - 3DS Hacks Guide</title>
+<meta name="description" content="A complete guide to 3DS custom firmware">
+
+
+  <meta name="author" content="Nintendo Homebrew">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="3DS Hacks Guide">
+<meta property="og:title" content="Finalisation de l’installation">
+<meta property="og:url" content="https://3ds.hacks.guide/fr_FR/finalizing-setup.html">
+
+
+  <meta property="og:description" content="A complete guide to 3DS custom firmware">
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://3ds.hacks.guide/fr_FR/finalizing-setup.html">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Nintendo Homebrew",
+      "url": "https://3ds.hacks.guide/"
+    
+  }
+</script>
+
+
+  <meta name="google-site-verification" content="jVXoPK_-qzKJp4SScnZYpOIX3yDXfGnAoTBJYixUOwg" />
+
+
+  <meta name="msvalidate.01" content="F3532011519E308583A0A2CAF2DD69E8">
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="3DS Hacks Guide Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png?v=PYEmwKvQAx">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png?v=PYEmwKvQAx" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-194x194.png?v=PYEmwKvQAx" sizes="194x194">
+<link rel="icon" type="image/png" href="/images/android-chrome-192x192.png?v=PYEmwKvQAx" sizes="192x192">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png?v=PYEmwKvQAx" sizes="16x16">
+<link rel="manifest" href="/images/manifest.json?v=PYEmwKvQAx">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg?v=PYEmwKvQAx" color="#2E3440">
+<link rel="shortcut icon" href="/images/favicon.ico?v=PYEmwKvQAx">
+<meta name="apple-mobile-web-app-title" content="Guide">
+<meta name="application-name" content="Guide">
+<meta name="msapplication-TileColor" content="#2E3440">
+<meta name="msapplication-TileImage" content="/images/mstile-144x144.png?v=PYEmwKvQAx">
+<meta name="msapplication-config" content="/images/browserconfig.xml?v=PYEmwKvQAx">
+<meta name="theme-color" content="#2E3440">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" integrity="sha512-LQ97camar/lOliT/MqjcQs5kWgy6Qz/cCRzzRzUCfv0fotsCTC9ZHXaPQmJV8Xu/PVALfJZ7BDezl5lW3/qBxg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js" integrity="sha512-yXXqOFjdjHNH1GND+1EO0jbvvebABpzGKD66djnUfiKlYME5HGMUJHoCaeE4D5PTG2YsSJf6dwqyUUvQvS0vaA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#2e3440"
+    },
+    "button": {
+      "background": "#60818f"
+    }
+  },
+  "theme": "edgeless",
+  "position": "top",
+  "static": true,
+  "content": {
+    "message": "Ce site web utilise des cookies pour afficher l'avancement actuel du guide sur la barre latérale et améliorer le site."
+  }
+})});
+</script>
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <!-- <a class="site-title" href="/">
+          3DS Hacks Guide
+          
+        </a>
+      -->
+        <ul class="visible-links">
+          <!-- modified to use multilang, guide-specific -->
+          
+          
+          
+          
+          
+          
+            
+              <li class="masthead__menu-item masthead__menu-item--lg"><a href="/fr_FR/">Accueil</a></li>
+            
+          
+            
+              <li class="masthead__menu-item"><a href="/fr_FR/faq">FAQ</a></li>
+            
+          
+            
+              <li class="masthead__menu-item"><a href="/fr_FR/troubleshooting">Dépannage</a></li>
+            
+          
+            
+              <li class="masthead__menu-item"><a href="/fr_FR/checking-for-cfw">Vérification de la présence d'un CFW</a></li>
+            
+          
+            
+              <li class="masthead__menu-item"><a href="/fr_FR/godmode9-usage">Utilisation de GodMode9</a></li>
+            
+          
+            
+              <li class="masthead__menu-item"><a href="/fr_FR/contribute">Contribuer</a></li>
+            
+          
+            
+              <li class="masthead__menu-item"><a href="/fr_FR/region-changing">Changement de région</a></li>
+            
+          
+            
+              <li class="masthead__menu-item"><a href="/fr_FR/uninstall-cfw">Désinstallation du CFW</a></li>
+            
+          
+            
+              <li class="masthead__menu-item"><a href="/fr_FR/credits">Remerciements</a></li>
+            
+          
+            
+              <li class="masthead__menu-item"><a href="/fr_FR/site-navigation">Index du site</a></li>
+            
+          
+          <!-- end guide specific -->
+        </ul>
+        
+        <!-- completely redo hidden links for multilang, guide-specific -->
+        <ul class="hidden-links links-menu hidden"></ul>
+        <ul class="hidden-links lang-menu hidden">
+          
+          
+          
+          <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/finalizing-setup.html">English</a></li>
+          <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/es_ES/finalizing-setup.html">Español</a></li>
+          <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/de_DE/finalizing-setup.html">Deutsch</a></li>
+          <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/fr_FR/finalizing-setup.html">Français</a></li>
+          <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/it_IT/finalizing-setup.html">Italiano</a></li>
+          <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/nl_NL/finalizing-setup.html">Nederlands</a></li>
+          <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/pt_BR/finalizing-setup.html">Português do Brasil</a></li>
+          <!-- <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/pt_PT/finalizing-setup.html">Português (Portugal)</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/ru_RU/finalizing-setup.html">Русский</a></li> -->
+          <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/zh_CN/finalizing-setup.html">简体中文</a></li>
+          <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/zh_TW/finalizing-setup.html">繁體中文</a></li>
+          <!-- <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/pl_PL/finalizing-setup.html">Polski</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/tr_TR/finalizing-setup.html">Türkçe</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/vi_VN/finalizing-setup.html">Tiếng Việt</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/ca_ES/finalizing-setup.html">Català</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/el_GR/finalizing-setup.html">Ελληνικά</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/he_IL/finalizing-setup.html">עברית‎</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/sv_SE/finalizing-setup.html">Svenska</a></li> -->
+          <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/ko_KR/finalizing-setup.html">한국어</a></li>
+          <!-- <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/no_NO/finalizing-setup.html">Norsk</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/ja_JP/finalizing-setup.html">日本語</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/ar_SA/finalizing-setup.html">اللغة العربية</a></li> -->
+          <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/hu_HU/finalizing-setup.html">Magyar</a></li>
+          <!-- <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/ro_RO/finalizing-setup.html">Română</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/sr_SP/finalizing-setup.html">Српски</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/af_ZA/finalizing-setup.html">Afrikaans</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/ms_MY/finalizing-setup.html">Bahasa Melayu</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/fi_FI/finalizing-setup.html">Suomi</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/da_DK/finalizing-setup.html">Dansk</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/uk_UA/finalizing-setup.html">Українська</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/cs_CZ/finalizing-setup.html">Čeština</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/en_PT/finalizing-setup.html">Pirate English</a></li> -->
+        </ul>
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <button class="greedy-nav__toggle_lang"><div class="langicon"><i class="fa fa-language fa-lg" aria-hidden="true"></i></div></button>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  <!-- 
+  <div class="sidebar sticky">
+  
+  
+    
+    
+  
+  </div>
+
+-->
+
+
+
+<div class="sidebar sticky" style="display: none;">
+  
+
+
+
+
+
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle Menu</label>
+  <ul class="nav__items">
+    <li>
+      <span class="nav__sub-title">Progression globale</span>
+      <ol>
+        
+          
+            <li style="display: none;" data-name="home"><a href='/fr_FR/'>Accueil</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="key-information"><a href='/fr_FR/key-information'>Informations clés</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="get-started"><a href='/fr_FR/get-started'>Pour commencer</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(new-3ds)"><a href='/fr_FR/ntrboot'>ntrboot</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(kor)"><a href='/fr_FR/seedminer'>Seedminer</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(twn)"><a href='/fr_FR/seedminer-(twn)'>Seedminer (TWN)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="ntrboot"><a href='/fr_FR/bannerbomb3'>BannerBomb3</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="seedminer"><a href='/fr_FR/homebrew-launcher-(super-skaterhax)'>Homebrew Launcher (super-skaterhax)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="seedminer-(mii)"><a href='/fr_FR/dumping-movable-(nimhax)'>Dumping du Movable (nimhax)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="multiple-options"><i>(Choix multiple)</i></li>
+          
+        
+          
+            <li style="display: none;" data-name="bannerbomb3"><a href='/fr_FR/flashing-ntrboot-(3ds-single-system)'>Flashage de ntrboot (une seule 3DS)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="bannerbomb3-(legacy)"><a href='/fr_FR/flashing-ntrboot-(3ds-multi-system)'>Flashage de ntrboot (plusieurs 3DS)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(super-skaterhax)"><a href='/fr_FR/flashing-ntrboot-(dsi)'>Flashage de ntrboot (DSi)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="dumping-movable-(nimhax)"><a href='/fr_FR/flashing-ntrboot-(nds)'>Flashage de ntrboot (NDS)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="multiple-options"><a href='/fr_FR/bannerbomb3-fredtool-(twn)'>BannerBomb3 + Fredtool (TWN)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="flashing-ntrboot-(3ds-single-system)"><a href='/fr_FR/installing-boot9strap-(hardmod)'>Installation de boot9strap (Hardmod)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="flashing-ntrboot-(3ds-multi-system)"><a href='/fr_FR/installing-boot9strap-(hbl-usm)'>Installation de boot9strap (HBL-USM)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="flashing-ntrboot-(dsi)"><a href='/fr_FR/installing-boot9strap-(ntrboot)'>Installation de boot9strap (ntrboot)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="flashing-ntrboot-(nds)"><a href='/fr_FR/installing-boot9strap-(soundhax)'>Installation de boot9strap (Soundhax)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="bannerbomb3-fredtool-(twn)"><a href='/fr_FR/installing-boot9strap-(safecerthax)'>Installation de boot9strap (safecerthax)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(hardmod)"><a href='/fr_FR/installing-boot9strap-(ssloth-browser)'>Installation de boot9strap (SSLoth-Browser)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(hbl-usm)"><a href='/fr_FR/installing-boot9strap-(fredtool)'>Installation de boot9strap (Fredtool)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(ntrboot)"><a href='/fr_FR/installing-boot9strap-(usm)'>Installation de boot9strap (USM)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(soundhax)"><a href='/fr_FR/installing-boot9strap-(kartdlphax)'>Installation de boot9strap (kartdlphax)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(safecerthax)"><a href='/fr_FR/installing-boot9strap-(frogtool)'>Installation de boot9strap (Frogtool)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(ssloth-browser)"><a href='/fr_FR/finalizing-setup'>Finalisation de la configuration</a></li>
+          
+        
+      </ol>
+    </li>
+  </ul>
+</nav>
+</div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Finalisation de l’installation">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Finalisation de l’installation
+</h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+
+        <hr>
+
+        
+        
+
+        
+          
+          <div class ="notice"><b>Pour un support en Anglais, demander de l'aide sur le <a href="https://discord.gg/MWxPgEp">Discord Nintendo Homebrew</a>.</b></div>
+        
+          
+          <div class ="notice"><b>Si vous appréciez ce guide, nous acceptons les <a href="contribute#donations">Dons</a>.</b></div>
+        
+
+        <hr>
+
+        <aside class="sidebar__right">
+<nav class="toc">
+    <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> Table of Contents</h4></header>
+<ul class="toc__menu" id="markdown-toc">
+  <li><a href="#lecture-requise" id="markdown-toc-lecture-requise">Lecture requise</a></li>
+  <li><a href="#notes-de-compatibilité" id="markdown-toc-notes-de-compatibilité">Notes de compatibilité</a></li>
+  <li><a href="#ce-dont-vous-avez-besoin" id="markdown-toc-ce-dont-vous-avez-besoin">Ce dont vous avez besoin</a>    <ul>
+      <li><a href="#instructions" id="markdown-toc-instructions">Instructions</a>        <ul>
+          <li><a href="#section-i---préparatifs" id="markdown-toc-section-i---préparatifs">Section I - Préparatifs</a></li>
+          <li><a href="#section-ii---cfw-check" id="markdown-toc-section-ii---cfw-check">Section II - CFW Check</a></li>
+          <li><a href="#section-iii---updating-the-system" id="markdown-toc-section-iii---updating-the-system">Section III - Updating the System</a></li>
+          <li><a href="#section-iv---homebrew-launcher" id="markdown-toc-section-iv---homebrew-launcher">Section IV - Homebrew Launcher</a></li>
+          <li><a href="#section-v---rtc-and-dsp-setup" id="markdown-toc-section-v---rtc-and-dsp-setup">Section V - RTC and DSP Setup</a></li>
+          <li><a href="#section-vi---installing-cias" id="markdown-toc-section-vi---installing-cias">Section VI - Installing CIAs</a></li>
+          <li><a href="#section-vii---ctrnand-luma3ds" id="markdown-toc-section-vii---ctrnand-luma3ds">Section VII - CTRNAND Luma3DS</a></li>
+          <li><a href="#section-viii---cleanup-sd-card" id="markdown-toc-section-viii---cleanup-sd-card">Section VIII - Cleanup SD Card</a></li>
+          <li><a href="#section-ix---backup-essential-files" id="markdown-toc-section-ix---backup-essential-files">Section IX - Backup Essential Files</a></li>
+        </ul>
+      </li>
+      <li><a href="#informations-et-notes" id="markdown-toc-informations-et-notes">Informations et notes</a></li>
+    </ul>
+  </li>
+</ul>
+
+  </nav>
+</aside>
+
+<h3 id="lecture-requise">Lecture requise</h3>
+
+<p>Le fichier <code class="language-plaintext highlighter-rouge">boot.firm</code> est exécuté par boot9strap lui-même, après avoir terminé le chargement de la NAND. Dans ce cas, nous utilisons Luma3DS de <a href="https://github.com/LumaTeam/">LumaTeam</a> pour patcher la console, lui permettant d’exécuter des homebrew.</p>
+
+<p>Sur cette page, nous ferons des sauvegardes des fichiers système critiques et installerons les homebrew suivants :</p>
+
+<ul>
+  <li><strong>FBI</strong> <em>(installe les applications au format CIA)</em></li>
+  <li><strong>Anemone3DS</strong> <em>(Permet d’installer des thèmes personnalisés)</em></li>
+  <li><strong>Checkpoint</strong> *(Sauvegarde et restaure des fichiers de sauvegarde pour les jeux NDS et 3DS) *</li>
+  <li><strong>Universal-Updater</strong> <em>(une boutique d’applications homebrew pour télécharger des homebrews depuis la 3DS via Wi-Fi)</em></li>
+  <li><strong>GodMode9</strong> <em>(Programme multifonction qui peut effectuer des opérations relatives à la NAND et aux cartes de jeu)</em></li>
+  <li><strong>Homebrew Launcher Loader</strong> *(lance le Homebrew Launcher) *</li>
+</ul>
+
+<p class="notice--warning">Il n’est pas recommandé d’ignorer le téléchargement de ces applications, car nombre d’entre elles seront utilisées plus tard sur cette page. À la fin de cette page, votre carte SD sera nettoyée en supprimant les fichiers d’installation inutiles.</p>
+
+<h3 id="notes-de-compatibilité">Notes de compatibilité</h3>
+
+<p class="notice--warning">Si votre <strong>New 3DS</strong> était en version 2.1.0 avant de suivre les instructions ce guide, vous devriez <a href="godmode9-usage#restoring-a-nand-backup">restaurer votre sauvegarde NAND</a> avant de continuer. Cela ne s’applique probablement pas à vous à moins que vous ne suiviez ce guide en 2017.</p>
+
+<p class="notice--info">Si votre configuration CFW précédente était basée sur EmuNAND et que vous souhaitez déplacer le contenu de votre EmuNAND/RedNAND vers SysNAND, suivez <a href="move-emunand">Transférer votre EmuNAND</a> avant de suivre cette page. Si vous ne savez pas ce qu’est une EmuNAND, cela ne s’applique pas à vous.</p>
+
+<h2 id="ce-dont-vous-avez-besoin">Ce dont vous avez besoin</h2>
+
+<ul>
+  <li>La dernière version d’<a href="https://github.com/astronautlevel2/Anemone3DS/releases/latest">Anemone3DS</a> (le fichier <code class="language-plaintext highlighter-rouge">.cia</code>)</li>
+  <li>La version 3.7.4 de <a href="https://github.com/BernardoGiordano/Checkpoint/releases/tag/v3.7.4">Checkpoint</a> (le fichier <code class="language-plaintext highlighter-rouge">.cia</code>)</li>
+  <li>La dernière version du <a href="https://github.com/mariohackandglitch/homebrew_launcher_dummy/releases/latest">Homebrew Launcher Wrapper</a> (le fichier <code class="language-plaintext highlighter-rouge">.cia</code>)</li>
+  <li>La dernière version de <a href="https://github.com/Universal-Team/Universal-Updater/releases/latest">Universal-Updater</a> (le fichier <code class="language-plaintext highlighter-rouge">.cia</code>)</li>
+  <li>La dernière version de <a href="https://github.com/Steveice10/FBI/releases/latest">FBI</a> (<strong>les deux fichiers</strong> : <code class="language-plaintext highlighter-rouge">.cia</code> et <code class="language-plaintext highlighter-rouge">.3dsx</code>)</li>
+  <li>La dernière version de <a href="https://github.com/d0k3/GodMode9/releases/latest">GodMode9</a> (le fichier GodMode9 <code class="language-plaintext highlighter-rouge">.zip</code>)</li>
+</ul>
+
+<h3 id="instructions">Instructions</h3>
+
+<h4 id="section-i---préparatifs">Section I - Préparatifs</h4>
+
+<p>Dans cette section, vous copierez les fichiers nécessaires pour suivre le reste des instructions de cette page.</p>
+
+<ol>
+  <li>Éteignez votre console</li>
+  <li>Insérez votre carte SD dans votre ordinateur</li>
+  <li>Créez un dossier nommé <code class="language-plaintext highlighter-rouge">cias</code> à la racine de votre carte SD si celui ci n’existe pas</li>
+  <li>Copiez tous les fichiers CIA (<code class="language-plaintext highlighter-rouge">Anemone3DS.cia</code>, <code class="language-plaintext highlighter-rouge">Checkpoint.cia</code>, <code class="language-plaintext highlighter-rouge">FBI.cia</code>, <code class="language-plaintext highlighter-rouge">Homebrew_Launcher.cia</code> et <code class="language-plaintext highlighter-rouge">Universal-Updater.cia</code>) dans le dossier <code class="language-plaintext highlighter-rouge">/cias/</code> de votre carte SD</li>
+  <li>Créez un dossier nommé <code class="language-plaintext highlighter-rouge">3ds</code> à la racine de votre carte SD si celui ci n’existe pas
+    <ul>
+      <li>Ce dossier stocke les applications homebrew et leurs données; il est différent du dossier <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> que la console génère automatiquement</li>
+    </ul>
+  </li>
+  <li>Copiez <code class="language-plaintext highlighter-rouge">FBI.3dsx</code> dans le dossier <code class="language-plaintext highlighter-rouge">/3ds/</code> de votre carte SD</li>
+  <li>Créez un dossier nommé <code class="language-plaintext highlighter-rouge">payloads</code> dans le dossier <code class="language-plaintext highlighter-rouge">luma</code> sur votre carte SD, si il n’existe pas déjà</li>
+  <li>Copiez le fichier <code class="language-plaintext highlighter-rouge">GodMode9.firm</code> de l’archive <code class="language-plaintext highlighter-rouge">.zip</code> de GodMode9 dans le dossier <code class="language-plaintext highlighter-rouge">/luma/payloads/</code> sur votre carte SD</li>
+  <li>Copiez le dossier <code class="language-plaintext highlighter-rouge">gm9</code> de l’archive <code class="language-plaintext highlighter-rouge">.zip</code> de GodMode9 vers la racine de votre carte SD</li>
+  <li>Réinsérez votre carte SD dans votre console</li>
+  <li>Allumez votre console</li>
+</ol>
+
+<p>Ces captures d’écran montrent l’arborescence de la carte SD requise pour suivre cette page. Il est possible que vous ayez des fichiers ou des dossiers supplémentaires sur votre carte SD, selon votre configuration précédente ou la méthode que vous avez suivie.</p>
+
+<p class="notice--info"><img src="https://3ds.hacks.guide/images/screenshots/finalizing-root-layout.png" alt="" /></p>
+
+<p class="notice--info"><img src="https://3ds.hacks.guide/images/screenshots/godmode9-location.png" alt="" /></p>
+
+<h4 id="section-ii---cfw-check">Section II - CFW Check</h4>
+
+<p>Comme mesure de sécurité supplémentaire, nous effectuerons une vérification supplémentaire de la présence d’un custom firmware. If custom firmware is not installed by this point for any reason, the next section may render your console unable to be hacked without external hardware.</p>
+
+<ol>
+  <li>Éteignez votre console</li>
+  <li>Maintenez le bouton (Select) enfoncé</li>
+  <li>Allumez votre console tout en maintenant le bouton (Select) enfoncé</li>
+  <li>If the check was successful, your device should have booted into the Luma3DS configuration menu</li>
+  <li>Appuyez sur (Start) pour enregistrer les modifications et redémarrer</li>
+  <li>Éteignez votre console</li>
+</ol>
+
+<p class="notice--danger">If you do NOT boot into the Luma3DS configuration menu, custom firmware was not installed on your device. Join <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew on Discord</a> and ask, in English, for help.</p>
+
+<h4 id="section-iii---updating-the-system">Section III - Updating the System</h4>
+
+<p>Dans cette section, vous allez mettre à jour votre console vers la dernière version, ce qui est sans danger avec le custom firmware.</p>
+
+<ol>
+  <li>Mettez à jour votre console en vous rendant dans les Paramètres de la console, puis “Autres paramètres”, puis tout à droite sur l’option “Mise à jour”
+    <ul>
+      <li>Mettre à jour tout en ayant B9S + Luma (ce que vous avez) est sans danger</li>
+      <li>La console peut afficher un message disant “Aucune mise à jour nécessaire” au lieu de faire une mise à jour. Ceci est normal si vous êtes déjà à jour ; passez à la section suivante.</li>
+      <li>Si vous obtenez une erreur, réglez vos paramètres DNS et proxy sur « Automatique »</li>
+      <li>Si cela vous donne toujours une erreur, <a href="troubleshooting#finalizing-setup">suivez ce guide de dépannage</a></li>
+    </ul>
+  </li>
+</ol>
+
+<h4 id="section-iv---homebrew-launcher">Section IV - Homebrew Launcher</h4>
+
+<p>Dans cette section, vous allez temporairement remplacer Mode téléchargement par Homebrew Launcher (dont nous avons besoin pour lancer FBI). L’application Mode téléchargement reviendra automatiquement à la normale une fois que vous redémarrerez votre console.</p>
+
+<ol>
+  <li>Lancez l’application Mode téléchargement (<img src="https://3ds.hacks.guide/images/download-play-icon.png" alt="" height="24px" width="24px" />)</li>
+  <li>Attendez jusqu’à ce que vous voyiez les boutons <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> et <code class="language-plaintext highlighter-rouge">Nintendo DS</code></li>
+  <li>Appuyez simultanément sur (L) + (Bas sur la croix directionnelle) + (Select) pour ouvrir le menu Rosalina</li>
+  <li>Sélectionnez “Miscellaneous options”</li>
+  <li>Sélectionnez “Switch the hb. title to the current app.”</li>
+  <li>Appuyez sur (B) pour continuer</li>
+  <li>Appuyez sur (B) pour revenir au menu principal de Rosalina</li>
+  <li>Appuyez sur (B) pour quitter le menu Rosalina</li>
+  <li>Appuyez sur (HOME), pour mettre Mode téléchargement en suspens</li>
+  <li>Appuyez sur le bouton “Quitter” sur l’écran du bas pour fermer Mode téléchargement</li>
+  <li>Relancez l’application Mode téléchargement</li>
+  <li>Votre console devrait maintenant charger le Homebrew Launcher
+    <ul>
+      <li>Si votre console est bloquée sur l’écran de chargement, il vous manque <code class="language-plaintext highlighter-rouge">boot.3dsx</code> à la racine de votre carte SD</li>
+    </ul>
+  </li>
+</ol>
+
+<h4 id="section-v---rtc-and-dsp-setup">Section V - RTC and DSP Setup</h4>
+
+<p>Dans cette section, vous synchroniserez l’horloge interne de votre 3DS avec l’heure réelle et allez dumper le firmware du son (ce qui est nécessaire pour que certains logiciels homebrew utilisent correctement le son).</p>
+
+<ol>
+  <li>Appuyez simultanément sur (L) + (Bas sur la croix directionnelle) + (Select) pour ouvrir le menu Rosalina</li>
+  <li>Sélectionnez “Miscellaneous options”</li>
+  <li>Sélectionnez “Dump DSP firmware”</li>
+  <li>Appuyez sur (B) pour continuer</li>
+  <li>Sélectionnez “Nullify user time offset”</li>
+  <li>Appuyez sur (B) pour continuer</li>
+  <li>Appuyez sur (B) pour revenir au menu principal de Rosalina</li>
+  <li>Appuyez sur (B) pour quitter le menu Rosalina</li>
+</ol>
+
+<h4 id="section-vi---installing-cias">Section VI - Installing CIAs</h4>
+
+<p>Dans cette section, vous installerez plusieurs applications homebrew utiles dans le Menu HOME.</p>
+
+<ol>
+  <li>Lancez FBI que vous trouverez dans la liste des homebrews</li>
+  <li>Naviguez vers <code class="language-plaintext highlighter-rouge">SD</code> -&gt; <code class="language-plaintext highlighter-rouge">cias</code></li>
+  <li>Sélectionnez “&lt;current directory&gt;”</li>
+  <li>Sélectionnez l’option “install and delete all CIAs” (installer et effacer tous les CIAs), appuyez ensuite sur (A) pour confirmer votre choix</li>
+  <li>Appuyez sur (Home), puis fermez Mode téléchargement</li>
+</ol>
+
+<h4 id="section-vii---ctrnand-luma3ds">Section VII - CTRNAND Luma3DS</h4>
+
+<p>Dans cette section, vous utiliserez un script pour copier certains fichiers de Luma3DS vers la mémoire interne afin qu’ils soient accessibles, même sans carte SD insérée.</p>
+
+<ol>
+  <li>Éteignez votre console</li>
+  <li>Appuyez sur le bouton (START) et maintenez le enfoncé tout en allumant votre console. Ceci lancera GodMode9
+    <ul>
+      <li>Si votre console ne démarre pas sur GodMode9, assurez-vous que le fichier <code class="language-plaintext highlighter-rouge">GodMode9.firm</code> est présent dans <code class="language-plaintext highlighter-rouge">/luma/payloads/</code> et que <code class="language-plaintext highlighter-rouge">payloads</code> est correctement écrit</li>
+    </ul>
+  </li>
+  <li>Si vous êtes invité à créer une sauvegarde de fichiers essentiels, appuyez sur (A) pour le faire, puis appuyez sur (A) pour continuer une fois terminé</li>
+  <li>Si vous êtes invité à régler la date et l’heure du RTC, appuyez sur (A) pour le faire, puis réglez la date et l’heure, puis appuyez sur (A) pour continuer</li>
+  <li>Appuyez sur (HOME) pour faire apparaître le menu d’actions</li>
+  <li>Sélectionnez “Scripts”</li>
+  <li>Sélectionnez “GM9Megascript”</li>
+  <li>Sélectionnez “Scripts from Plailect’s Guide”</li>
+  <li>Sélectionnez “Setup Luma3DS to CTRNAND”</li>
+  <li>Lorsque vous y êtes invité, appuyez sur (A)</li>
+  <li>Appuyez sur (A) pour autoriser l’écriture sur votre SysNAND, puis entrez la combinaison de touches demandée</li>
+  <li>Appuyez sur (A) pour continuer</li>
+</ol>
+
+<h4 id="section-viii---cleanup-sd-card">Section VIII - Cleanup SD Card</h4>
+
+<p>Dans cette section, vous utiliserez un script pour supprimer des fichiers inutiles de votre carte SD.</p>
+
+<ol>
+  <li>Sélectionnez “Cleanup SD Card”</li>
+  <li>Lorsque vous y êtes invité, appuyez sur (A)</li>
+  <li>Appuyez sur (A) pour continuer</li>
+  <li>Appuyez sur (B) pour revenir au menu principal</li>
+</ol>
+
+<h4 id="section-ix---backup-essential-files">Section IX - Backup Essential Files</h4>
+
+<p>Dans cette section, vous ferez des sauvegardes de fichiers qui peuvent être utilisés pour réparer un brick logiciel ou pour récupérer des données.</p>
+
+<ol>
+  <li>Sélectionnez “Backup Options”</li>
+  <li>Sélectionnez “SysNAND Backup”</li>
+  <li>Appuyez sur (A) pour confirmer
+    <ul>
+      <li>Ce processus prendra un certain temps</li>
+      <li>En cas d’erreur, recherchez votre problème dans le <a href="troubleshooting#finalizing-setup">guide de dépannage</a></li>
+    </ul>
+  </li>
+  <li>Appuyez sur (A) pour continuer</li>
+  <li>Appuyez sur (B) pour revenir au menu principal</li>
+  <li>Sélectionnez “Exit”</li>
+  <li>Appuyez (A) pour reverrouiller autorisations en écriture si vous êtes invité</li>
+  <li>Naviguez vers <code class="language-plaintext highlighter-rouge">[S:] SYSNAND VIRTUAL</code></li>
+  <li>Appuyez sur (A) sur <code class="language-plaintext highlighter-rouge">essential.exefs</code> pour le sélectionner</li>
+  <li>Sélectionnez “Copy to 0:/gm9/out”
+    <ul>
+      <li>Si vous voyez “Destination already exists”, appuyez sur (A) sur “Overwrite file(s)”</li>
+    </ul>
+  </li>
+  <li>Appuyez sur (A) pour continuer</li>
+  <li>Appuyez sur (HOME) pour faire apparaître le menu d’actions</li>
+  <li>Sélectionnez “Poweroff system” pour éteindre votre appareil</li>
+  <li>Insérez votre carte SD dans votre ordinateur</li>
+  <li>Copiez <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin</code>, <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin.sha</code>, et <code class="language-plaintext highlighter-rouge">essentiel.exefs</code> du dossier <code class="language-plaintext highlighter-rouge">/gm9/out/</code> de votre carte SD vers un emplacement sûr sur votre ordinateur
+    <ul>
+      <li>Copiez ces sauvegardes vers plusieurs emplacements (comme un cloud, un disque dur externe, etc.)
+  Ces sauvegardes vous sauveront d’un brick et/ou vous aideront à récupérer des fichiers de l’image de la NAND si quelque chose se passe mal plus tard</li>
+    </ul>
+  </li>
+  <li>Supprimez <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin</code> et <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin.sha</code> du dossier <code class="language-plaintext highlighter-rouge">/gm9/out/</code> de votre carte SD après l’avoir copié
+    <ul>
+      <li>Les autres fichiers de sauvegarde sont négligeables en taille et peuvent être conservés sur votre carte SD pour un accès facilité</li>
+    </ul>
+  </li>
+  <li>Si vous l’avez, copiez le dossier <code class="language-plaintext highlighter-rouge">/luma/backups/</code> de votre carte SD vers un endroit sûr sur votre ordinateur</li>
+  <li>Réinsérez votre carte SD dans votre console</li>
+  <li>Allumez votre console</li>
+</ol>
+
+<hr />
+
+<p class="notice--success">Vous avez terminé! Le custom firmware est maintenant entièrement installé et configuré sur votre console.</p>
+
+<h3 id="informations-et-notes">Informations et notes</h3>
+
+<div class="notice--info">
+<p>Voici quelques combinaisons de touches que vous devriez connaître :</p>
+
+<ul>
+  <li>Maintenir (Select) au démarrage lancera le menu de configuration de Luma3DS.</li>
+  <li>Maintenir (Start) au démarrage lancera GodMode9, ou si vous avez plusieurs payloads dans <code class="language-plaintext highlighter-rouge">/luma/payloads/</code>, le chainloader Luma3DS.</li>
+  <li>Par défaut, appuyez sur (L) + (Bas sur la croix directionnelle) + (Select) en mode 3DS pour ouvrir le menu Rosalina, où vous pouvez vérifier les informations de la console, prendre des captures d’écran, activer des codes de triche, etc. Cela peut être modifié à partir du menu Rosalina.</li>
+  <li>Maintenir (Start) + (Select) + (X) au démarrage fera apparaître une couleur dans la LED de notification à des fins de débogage. Pour une liste de ces combinaisons, lisez le <a href="https://github.com/SciresM/boot9strap/releases/tag/1.4">changelog</a>.</li>
+</ul>
+</div>
+
+<p class="notice--info">Voir <a href="https://3ds.eiphax.tech/tips.html">ici</a> pour quelques suggestions sur les choses à faire avec le custom firmware.</p>
+
+<p class="notice--info">Pour plus d’informations sur l’utilisation des différentes fonctionnalités de GodMode9, consultez les pages <a href="godmode9-usage">Utilisation de GodMode9</a> et <a href="dumping-titles-and-game-cartridges">Dumper des titres et des cartes de jeu</a>.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://github.com/hacks-guide/Guide_3DS" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+    
+<!--
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+    </ul>
+  -->
+</div>
+
+<!-- custom footer, guide specific -->
+
+
+
+<div class="page__footer-copyright">&copy; 2023 Nintendo Homebrew. - <a href="site-navigation">Index du site</a> - <a href="privacy-policy">Politique de confidentialité</a> <!-- Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.--></div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+<!-- for guide purposes all caching is removed and is separately built. -->
+
+
+
+
+
+  <script>
+  window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+  ga('create','UA-86465881-1','auto');
+  ga('set', 'anonymizeIp', false);
+  ga('send','pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
